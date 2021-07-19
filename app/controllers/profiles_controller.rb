@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-   def index
+  def index
     @user = User.find(1)
     raise Forbidden unless user_safe?
 
